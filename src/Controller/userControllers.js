@@ -165,8 +165,6 @@ const addDoctor = async (req, res) => {
       url: image.url,
     },
   });
-  console.log(image);
-  console.log(image.url);
   res.status(200).json(new ApiRes(200, "New doctor created", doctor));
 };
 
